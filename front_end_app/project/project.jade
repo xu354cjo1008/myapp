@@ -1,0 +1,16 @@
+block content
+  .container
+    .starter-template
+      h1 Project
+      p.lead
+        | Use this page to build project page.
+
+    #projects-wall
+      .project-block
+          img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+      .project-block
+          img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+      .project-block
+          img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+      .project-block(ng-repeat="project in projects")
+          img.imag-thumbnail(ng-src = "{{project.imageUrl}}")

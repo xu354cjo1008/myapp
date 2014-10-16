@@ -7,3 +7,146 @@ body {
   text-align: center;
 }
 
+#projects-wall {
+  margin:  0 auto;
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#projects-wall img { 
+  width: 250px; 
+  height: 250px; 
+}
+
+.project-block {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 15px 10px;
+}
+
+.project-block img {
+  width:100%;
+  height:100%;
+  position:absolute;
+  display:block;
+  box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.project-block .detail {
+  display:block;
+  width:100%;
+  height:100%;  
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.project-block .detail h3 {
+  padding: 15px 10px 0 10px;
+}
+.project-block .detail p {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.8em;
+}
+.project-item { 
+  display:block; 
+  width:100%; 
+  height:100%; 
+}
+.project-item .btn {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+  -ms-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+  box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+}
+.project-item .btn:hover { background-color: #ddd; }
+
+/* 3. Portfolio styles
+-----------------------------------------*/
+
+#portfolio-content {
+  margin:  0 auto;
+  display:-webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+#portfolio-content img { 
+  width: 250px; 
+  height: 250px; 
+}
+.portfolio-group {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: 15px 10px;
+}
+.portfolio-group img {
+  width:100%;
+  height:100%;
+  position:absolute;
+  display:block;
+  box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail {
+  display:block;
+  width:100%;
+  height:100%;  
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+}
+.portfolio-group .detail h3 {
+  padding: 15px 10px 0 10px;
+}
+.portfolio-group .detail p {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.8em;
+}
+.portfolio-item { 
+  display:block; 
+  width:100%; 
+  height:100%; 
+}
+.portfolio-item .btn {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+  -ms-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+  box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.44);
+}
+.portfolio-item .btn:hover { background-color: #ddd; }
+.pagination { width: 100%; }
+.pagination li {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;  
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+  -ms-box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+  box-shadow: 1px 1px 1px rgba(51,51,51,0.4);
+  margin-right: 10px;
+  border: 1px solid rgba(44, 44, 44, 0.1);
+}
+.pagination li:last-child { margin-right: 0; }
+.pagination li.active, .pagination li:hover { background-color: #A7DDFF; }

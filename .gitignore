@@ -1,0 +1,5 @@
+_Store
+*.swp
+log/*.log
+node_modules/
+front_end_app/bower_components/
