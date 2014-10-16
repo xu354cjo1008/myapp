@@ -7,10 +7,30 @@ block content
 
     #projects-wall
       .project-block
+      	a.project-item(ng-href = "/project/images/3560-4.jpg")
           img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+		  .detail
+			h3 Test 1
+			p Sed in molestie lectus. Curabitur non est neque. Maecenas id luctus ligula. Duis ac laoreet mi. Maecenas non lorem sed elit molestie tincidunt.
+			span.btn View
       .project-block
+      	a.project-item(ng-href = "/project/images/3560-4.jpg")
           img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+		  .detail
+			h3 Test 2
+			p Sed in molestie lectus. Curabitur non est neque. Maecenas id luctus ligula. Duis ac laoreet mi. Maecenas non lorem sed elit molestie tincidunt.
+			span.btn View
       .project-block
+      	a.project-item(ng-href = "/project/images/3560-4.jpg")
           img.imag-thumbnail(ng-src = "/project/images/3560-4.jpg")
+		  .detail
+			h3 Test 3
+			p Sed in molestie lectus. Curabitur non est neque. Maecenas id luctus ligula. Duis ac laoreet mi. Maecenas non lorem sed elit molestie tincidunt.
+			span.btn View
       .project-block(ng-repeat="project in projects")
+		a.project-item(ng-href = "{{project.imageUrl}}")
           img.imag-thumbnail(ng-src = "{{project.imageUrl}}")
+		  .detail
+			h3 {{project.name}}
+			p Sed in molestie lectus. Curabitur non est neque. Maecenas id luctus ligula. Duis ac laoreet mi. Maecenas non lorem sed elit molestie tincidunt.
+			span.btn View
